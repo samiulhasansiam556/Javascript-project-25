@@ -1,0 +1,173 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+/*login*/
+/* 
+.user_form{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.user_form .fb_login_btn{
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: green;
+  color: azure;
+  border: 1px solid;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+
+}
+.user_form .fb_login_btn:hover{
+background: transparent;
+color: tomato;
+outline: none;
+} 
+
+
+
+
+/*admin*/
+
+/* .admin_page{
+  display: none;
+}
+
+.admin_section{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0px;
+}
+
+.admin_section button{
+  padding: 5px 20px;
+  font-size: 20px;
+  color: aliceblue;
+  background: black;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.admin_section button:hover{
+  color: rgb(34, 89, 216);
+  background: transparent;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+
+
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}   */
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.user_form{
+  height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%; 
+}
+
+/* gmail_login_btn */
+
+.fb_login_btn{
+  padding: 10px 20px;
+  font-size: 20px;
+  background: #1877F2;
+  border: 1px solid;
+  color: #fff;
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+.fb_login_btn:hover{
+  background: transparent;
+  border: 1px solid;
+  color: #1877F2;
+}
+
+
+
+
+
+
+
+
+
+
+/* notify */
+.notify{
+   display: block;
+   width: 300px;
+   position: absolute;
+   margin: 0 auto ;
+   top: 20%;background: green;
+   text-align: center;
+   color: #fff;
+}
+
+/* admin_page */
+
+
+
+.admin_page {
+ 
+  display: none;
+}
+ 
+.admin_sec{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  
+}
+
+
+.admin_sec  button{
+  padding: 5px 20px;
+  background: #111;
+  color: #fff;
+  border: 1px solid #111;
+  cursor: pointer;
+  transition: .2s ease-in;
+   
+}
+.admin_sec  button:hover{
+  background: transparent;
+  border: 1px solid;
+  color: #111;
+}
+
+
+
+
+/* add show class */
+
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
