@@ -118,21 +118,29 @@ function loginWithFacebook() {
     const token = credential.accessToken;
     // The signed-in user info.
     const user = result.user;
-  }).catch((err) => {
-    console.log(err);
+  }).catch((error) => {
+    if (error.code === 'auth/popup-closed-by-user') {
+      // Display a message to the user indicating that the sign-in process was canceled
+      console.log('Sign-in process was canceled by the user.');
+    } else {
+      // Handle other authentication errors
+      console.error('An error occurred during sign-in:', error);
+    }
   });
 }
 
 const fb_login_btn = document.querySelector("#fb_login_btn");
 fb_login_btn.addEventListener('click', loginWithFacebook);  // Corrected function name
 
-// onAuthStateChanged
+// Listen for changes in the authentication state
 onAuthStateChanged(auth, (user) => {
   if (user) {
+    // User is signed in, hide the user form and show the admin pages
     document.querySelector('.user_form').classList.add('hide');
     document.querySelector('.admin_pages').classList.add('show');
   } else {
-    console.log("sorry");
+    // No user is signed in, log a message for debugging or user feedback
+    console.log("User is not signed in.");
   }
 });
 
